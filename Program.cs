@@ -16,9 +16,8 @@ namespace kattis
         static int[] calculateNetIncomePerBreak(int priceOfOneCommercial, int[] arrayOfStudentsListeningPerBreak)
         {
             for(int i = 0; i < arrayOfStudentsListeningPerBreak.Length; i++)
-            {
-                int currentValue = arrayOfStudentsListeningPerBreak[i];
-                arrayOfStudentsListeningPerBreak[i] = currentValue - priceOfOneCommercial;
+            {                
+                arrayOfStudentsListeningPerBreak[i] = arrayOfStudentsListeningPerBreak[i] - priceOfOneCommercial;
             }
 
             return  arrayOfStudentsListeningPerBreak;
